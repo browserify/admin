@@ -62,3 +62,24 @@ npm:
 npm access grant read-write browserify:developers $PKGNAME
 ```
 
+# publishing a package
+
+When you are ready to publish a new version of a package, here are some steps to
+follow:
+
+* update the `package.json` "version" field according to [semver][]
+* make a git commit with the version number in the comment
+* use (for example) `git tag 1.2.3` or `git tag v1.2.3` to tag a release
+* push to github using `git push origin master --tags`
+* run `npm publish`
+
+Individual projects may have slight variations. It's best to stick to whatever
+conventions they've established. You can list existing tags by typing `git tag`.
+
+Changes to any user-facing or implementation side of the package, including
+documentation fixes, should be published to npm.
+
+It's better to have several smaller updates for each new feature or fix rather
+than one big update where possible.
+
+[semver]: http://semver.org/
