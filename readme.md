@@ -33,7 +33,7 @@ member" button. Type in the github username and add the new member as an owner.
 
 For npm:
 
-Visit https://www.npmjs.com/org/browserify/members and type in the npm user
+Visit https://www.npmjs.com/settings/browserify/members and type in the npm user
 name. Set the radio button to "owner" then click the red "add member" button.
 
 [code of conduct]: https://raw.githubusercontent.com/browserify/browserify/master/code-of-conduct.md
