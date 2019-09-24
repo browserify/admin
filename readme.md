@@ -59,8 +59,11 @@ For npm, run this command, replacing `$PKGNAME` with the name of the package on
 npm:
 
 ```
-npm access grant read-write browserify:developers $PKGNAME
+npx npm@6.5 access grant read-write browserify:developers $PKGNAME
 ```
+
+(An old version of npm is required because recent versions of npm prohibit orgs
+from managing unscoped packages.)
 
 # publishing a package
 
@@ -83,3 +86,4 @@ It's better to have several smaller updates for each new feature or fix rather
 than one big update where possible.
 
 [semver]: http://semver.org/
+
